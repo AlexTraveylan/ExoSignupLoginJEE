@@ -3,5 +3,5 @@
 - Création de compte, avec inscription dans la base de donnée (configurer avec la votre : nom_table, utilisateur, et mdp)
 - Affichage de la liste des users.
 - Possibilité de supprimer ou de modifier un user.
-- Protection contre les injection sql avec des requetes préparés
+- Protection contre les injections sql avec des requetes préparées
 - Utilisation d'une fonction de hashage pour sécuriser les mdp.s
