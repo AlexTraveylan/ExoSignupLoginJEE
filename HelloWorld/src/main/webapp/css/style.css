@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+h1, h2, form, p {
+	text-align: center;
+	padding-bottom:20px;
+}
+
+h1 {
+	color: blue;
+}
+
+.erreur {
+	color:red;
+}
+
+.succes {
+	color:green;
+}
+
+.msg_bonjour{
+	color: yellow;
+}
+
+.form_field {
+	margin-bottom: 8px;
+}
