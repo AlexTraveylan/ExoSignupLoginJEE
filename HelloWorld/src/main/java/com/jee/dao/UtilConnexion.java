@@ -5,14 +5,13 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class UtilConnexion {
-	
+
 	public static Connection seConnecter() throws Exception {
-		
+
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			return DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "root");		
-		}
-		catch (ClassNotFoundException e) {
+			return DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "root");
+		} catch (ClassNotFoundException e) {
 			throw new Exception("ClassNotFoundException : " + e);
 		} catch (SQLException e) {
 			throw new Exception("SQLException : " + e);
