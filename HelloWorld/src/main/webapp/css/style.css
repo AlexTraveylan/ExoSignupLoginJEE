@@ -24,3 +24,14 @@ h1 {
 .form_field {
 	margin-bottom: 8px;
 }
+
+.header{
+	border: solid 1px black;
+	width: 800px;
+	margin:auto;
+}
+
+.table__container{
+	margin:auto;
+	width:1000px
+}

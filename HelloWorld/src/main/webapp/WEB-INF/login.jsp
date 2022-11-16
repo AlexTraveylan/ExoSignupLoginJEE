@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://myapp.fr/tld/extratags" prefix="mytags" %>
 
 <!DOCTYPE html>
 <html>
@@ -11,16 +12,11 @@
 <title>Page de Login</title>
 </head>
 <body>
-	<h1>Créer votre compte</h1>
-	<c:if test="${user != null}">
-		<p class="msg_bonjour">L'utilisateur est : ${user.username}, son email est : ${user.email }, il a entré comme mot de passe : ${user.password }</p>
-		<p class="${color}">${connected}</p>
-	</c:if>
+
+<mytags:Header userName='Page de création de compte' />
+
 	
-	
-	<p class="erreur">${ erreur }</p>
-	
-		<form class = "login_form" action="" method = "POST">
+		<form class = "login_form" action="" method = "POST" style="margin-top:20px">
 			<label for="username">Username</label>
 			<input class="form_field" name="username" type="text" placeholder="Username"><br>
 			<label for="email">Email</label>

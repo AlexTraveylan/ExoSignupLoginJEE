@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://myapp.fr/tld/extratags" prefix="mytags" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,12 +11,11 @@
 </head>
 <body>
 
-<h1>Page de modification de compte</h1>
+<mytags:Header userName='Page pour modifier le compte : ${user.username }' />
 
-<h2>Utilisateur en cours de modification : ${user.username}</h2>
 
-<form method="post">
-	<input type="hidden" name = "id_text" value="${id}">
+<form method="post" style="margin-top:20px">
+	<input type="hidden" name = "id_text" value="${user.id}">
 	<label for="username_text">Changer de nom d'utilisateur</label>
 	<input class="form_field" name = "username_text" type="text" value="${user.username }"><br>
 		

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://myapp.fr/tld/extratags" prefix="mytags" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +10,7 @@
 <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-<h1>Page de connexion</h1>
+<mytags:Header userName='Page de connexion' />
 
 <h2>Message : ${msg}</h2>
 
